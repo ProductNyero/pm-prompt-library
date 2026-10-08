@@ -66,7 +66,7 @@ If you say:
 Now the model has a basis for making trade-offs.
 
 
-$## 4. Constraints
+### 4. Constraints
 
 Setting constraints helps define technically possible but unwanted outputs.
 
@@ -94,11 +94,11 @@ A good framework here is to distinguish between what is **fixed** (things you ar
 
 Define what you actually want returned.
 
-For example, if you are using an agent to find a KYC provider, saying:
+For example, if you are using an agent to find a KYC provider, instead of saying:
 
 > “Give me providers who serve fintechs.”
 
-A solid prompt will say:
+A better instruction says:
 
 > “Give me 3 KYC providers that provide BVN support for fintechs in the African market. For each, provide the recommendation, rationale, trade-off, and when I should choose it. End with your recommended option based on the context I have given you about my product/business. Return the output in Markdown so I can copy it or generate it in a table or document.”
 
