@@ -7,7 +7,7 @@ A good prompt does not merely tell the model what to do. It gives the model enou
 Realistically, not every prompt will include every single element outlined below, but these give you a mental framework for what a solid prompt should contain.
 
 
-# 1. Objective
+## 1. Objective
 
 Define the actual outcome you want.
 
@@ -30,12 +30,12 @@ You can further improve the prompt by stating the sections you want included. Sa
 Needless to say, the output you’ll get using the third prompt outclasses the product of the first.
 
 
-# 2. Context
+## 2. Context
 
 Give the agent the information it needs to make good decisions, such as the problem at hand, the user, the business goals, existing market, product stage, stakeholders, and so on.
 
 
-# 3. Decision criteria
+## 3. Decision criteria
 
 Tell the model how to judge competing options.
 
@@ -54,7 +54,7 @@ If you say:
 Now the model has a basis for making trade-offs.
 
 
-# 4. Constraints
+## 4. Constraints
 
 Setting constraints helps define technically possible but unwanted outputs.
 
@@ -67,7 +67,7 @@ Generally, based on my own usage of AI agents, I’d categorise constraints into
 Overall, it is important that your prompt has a change boundary.
 
 
-# 5. Protect existing decisions
+## 5. Protect existing decisions
 
 This is especially helpful when iterating on an already-provisioned output.
 
@@ -78,7 +78,7 @@ State already established facts and decisions during refinement to avoid reopeni
 A good framework here is to distinguish between what is **fixed** (things you are happy with and must remain unchanged), what is **flexible** (things the model may decide), and what is **open** (things you want the agent to recommend).
 
 
-# 6. Specify outputs
+## 6. Specify outputs
 
 Define what you actually want returned.
 
@@ -91,14 +91,14 @@ A better instruction says:
 > “Give me 3 KYC providers that provide BVN support for fintechs in the African market. For each, provide the recommendation, rationale, trade-off, and when I should choose it. End with your recommended option based on the context I have given you about my product/business. Return the output in Markdown so I can copy it or generate it in a table or document.”
 
 
-# 7. Define your quality bar
+## 7. Define your quality bar
 
 Tell the agent what good sounds like.
 
 This is different from decision criteria. Here, you are teaching the agent your taste rather than relying on its trained taste for your persona.
 
 
-# 8. Reference material
+## 8. Reference material
 
 Give the model the raw material it should reason from, such as a screenshot, website link, image, document, or anything else that gives the agent an idea of what you want the final output to look like.
 
@@ -107,22 +107,22 @@ This is especially important if you are working on a design task, image generati
 More importantly, tell the model whether it should use the material as **evidence, inspiration, or authority**.
 
 
-# 9. Ambiguity handling
+## 9. Ambiguity handling
 
 When a prompt contains ambiguity, what should the model do?
 
 Depending on the context of the task at hand, you can handle this in three ways:
 
 
-## Ask
+### Ask
 
 > “If a missing detail materially changes the recommendation, ask me before proceeding.”
 
-## Assume
+### Assume
 
 > “Make reasonable assumptions where necessary and state them briefly.”
 
-## Branch
+### Branch
 
 > “If there are two materially different interpretations, analyse both.”
 
