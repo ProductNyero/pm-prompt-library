@@ -1,0 +1,83 @@
+{
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "maple",
+    "name": "PM Prompt Library",
+    "description": "A suite of prompts for high-leverage product management use cases with AI agents.",
+    "colors": {
+      "primary": "#ea580b",
+      "light": "#ea580b",
+      "dark": "#ea580b"
+    },
+    "contextual": {
+      "options": ["copy", "view", "chatgpt", "claude", "perplexity"]
+    },
+    "seo": {
+      "indexing": "all",
+      "metatags": {
+        "og:type": "website",
+        "og:site_name": "PM Prompt Library",
+        "twitter:card": "summary_large_image",
+        "robots": "index, follow"
+      }
+    },
+    "metadata": {
+      "timestamp": true
+    },
+    "navigation": {
+      "groups": [
+        {
+          "group": "Getting started",
+          "pages": [
+            "getting-started/introduction",
+            "getting-started/anatomy-of-a-good-prompt"
+          ]
+        },
+        {
+          "group": "Product Discovery",
+          "pages": [
+            "product-discovery/competitive-analysis",
+            "product-discovery/user-feedback-analysis"
+          ]
+        },
+        {
+          "group": "Product Strategy",
+          "pages": [
+            "product-strategy/roadmap",
+            "product-strategy/backlog"
+          ]
+        },
+        {
+          "group": "Product Development",
+          "pages": [
+            "product-development/prd",
+            "product-development/mvp"
+          ]
+        },
+        {
+          "group": "Product Experience",
+          "pages": ["product-experience/ux-copy"]
+        },
+        {
+          "group": "Product Communication",
+          "pages": [
+            "product-communication/product-demo-script",
+            "product-communication/release-notes",
+            "product-communication/changelog"
+          ]
+        },
+        {
+          "group": "Analytics",
+          "pages": [
+            "product-analytics/cohort-creation",
+            "product-analytics/dashboard-creation"
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "socials": {
+        "github": "https://github.com/ProductNyero",
+        "linkedin": "https://www.linkedin.com/in/nyerovwo-onokohwomo"
+      }
+    }
+  }
