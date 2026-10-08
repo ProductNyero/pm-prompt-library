@@ -1,0 +1,39 @@
+# Dashboard Builder
+
+> Use this prompt to build a dashboard in your analytics tool of choice using MCP and surface insights that support a specific product or business decision.
+
+## Use this prompt
+
+Build a dashboard in [analytics tool] using MCP based on the questions and context provided below.
+
+Role: [your role]
+
+Product type: [type of product/company]
+
+Analytics tool: [analytics tool]
+
+Decision the dashboard should support: [e.g. monitor activation, spot where users drop off, report weekly to leadership]
+
+Questions the dashboard must answer:
+
+1. [Question, e.g. How many new users reach their first key action each week?]
+2. [Question]
+3. [Question]
+
+Default date range and interval: [e.g. last 90 days, weekly]
+
+Segments or breakdowns needed: [e.g. by plan, by acquisition source, by cohort]
+
+Key definitions: [how you define terms such as "active" or "activated", or "ask me"]
+
+Existing assets to reuse: [saved insights, cohorts, dashboards, or "none"]
+
+Use the questions and context provided to determine the metrics, calculations, visualisations, and breakdowns that best support the dashboard's purpose. Every component should answer one of the stated questions.
+
+Use the available analytics data and existing assets where relevant. If a question cannot be answered accurately with the available data, say so rather than approximating it. If a definition is left open and the surrounding context is sufficient to make a reasonable choice, make that choice rather than creating an unnecessary clarification loop. If an unresolved definition would materially change the metric or its interpretation, surface the issue before proceeding.
+
+Choose metrics and visualisations that provide the clearest answer to each question. Do not add components simply for completeness, variety, or because a metric is commonly included in dashboards. Avoid duplicate components that communicate the same insight.
+
+After building the dashboard, verify that the components answer the stated questions and that the metrics and definitions are grounded in the available data.
+
+Give me the dashboard link or ID. The resulting dashboard should be useful for the stated decision, with every component serving a clear analytical purpose.

@@ -1,0 +1,45 @@
+# Changelog Creation
+
+> Use this prompt to create a changelog for your product or company.
+
+## Use this prompt
+
+Create a changelog for [product/company] based on the engineering changes and source materials provided below.
+
+Changelog period: [date range or release period]
+
+Reference materials: [GitHub codebase, pull requests, commits, engineering Slack channel, release documentation, or other relevant inputs]
+
+Additional context: [any relevant context or requirements]
+
+Review the reference materials to identify meaningful changes made to the product or codebase during the specified period. Use the available implementation history and engineering context to determine what changed, while distinguishing completed changes from discussions, proposals, experiments, or work that was not shipped.
+
+Group related commits or changes into coherent changelog entries rather than listing individual commits when they represent the same underlying change. Preserve meaningful technical detail where it helps explain the change, but do not include implementation noise that does not add value.
+
+Do not invent changes, technical details, release status, dates, or rationale that are not supported by the provided materials. If the available evidence is insufficient to establish that a change was completed or shipped, do not present it as a completed changelog entry.
+
+Return the changelog in the following structure:
+
+**[Version / release / date]**
+
+For each release or relevant period:
+
+### Added
+
+- **[Change name]** — [concise description]
+
+### Changed
+
+- **[Change name]** — [concise description]
+
+### Fixed
+
+- **[Issue / fix]** — [concise description]
+
+### Technical
+
+- **[Technical change]** — [concise description, where relevant]
+
+Only include categories that contain relevant changes. Where version numbers or release groupings are not available in the source material, use the applicable date or release period rather than inventing a version.
+
+The final changelog should provide an accurate, traceable record of meaningful product and engineering changes without reproducing raw commit history or internal discussion.

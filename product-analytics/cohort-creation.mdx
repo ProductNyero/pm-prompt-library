@@ -1,0 +1,33 @@
+# Cohort Builder
+
+> Use this prompt to build a cohort in your analytics tool of choice using MCP and gather relevant insights from a defined user population.
+
+## Use this prompt
+
+Build a cohort in [analytics tool] using MCP based on the cohort definition and product or business objective provided below.
+
+Role: [your role]
+
+Product type: [type of product/company]
+
+Analytics tool: [analytics tool]
+
+Objective: [decision or action this cohort will support, e.g. target a lifecycle email, compare retention, investigate drop-off]
+
+Cohort definition:
+
+- Include users who: [behavior or property, e.g. completed event X at least N times]
+- Within: [time window]
+- Exclude users who: [behavior or property, or "none"]
+- Type: [static snapshot / dynamic, updates automatically]
+- Name: [cohort name]
+
+Use the available analytics data and MCP capabilities to determine the appropriate cohort configuration. Preserve the intent and criteria of the definition provided. Do not silently add, remove, or change conditions, and do not create a materially different cohort simply because an alternative definition is easier to implement.
+
+Use only events, properties, and user attributes that are actually available in the analytics tool. Do not assume that a required event, property, or attribute exists. If a material ambiguity or data limitation prevents the requested population from being accurately represented, surface it rather than concealing it.
+
+You may make reasonable implementation decisions where the cohort definition and objective provide sufficient context. Only ask for clarification when the decision cannot be made without materially changing the requested cohort.
+
+Before creating the cohort, check whether an existing cohort substantially matches the requested definition and avoid creating an unnecessary duplicate. After creating or selecting the cohort, verify that its configuration accurately represents the requested population.
+
+After completing the task, provide the cohort name and its link or ID. The resulting cohort should faithfully represent the defined population, use real available data, and be suitable for the stated product or business decision.
